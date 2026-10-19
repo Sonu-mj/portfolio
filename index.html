@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srinivas Jadhav - Data Science Student</title>
+<meta name="description" content="Srinivas Jadhav builds machine learning that ships: a live retail analytics platform and a from-scratch RAG pipeline. Open to data science internships in Bangalore.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <p class="kicker">Srinivas Jadhav</p>
+  <h1>Data Science Student<br><span class="dim">who ships.</span></h1>
+  <p class="availability">Available &middot; Open to Internships &middot; Bangalore &middot; Immediate Joiner</p>
+  <p class="lede">I build machine learning that actually runs somewhere: a live retail analytics platform processing real bills, and a RAG pipeline written from scratch in Python with no frameworks. I learn best by building.</p>
+  <p class="sharpening">currently sharpening: deep learning</p>
+  <nav class="links">
+    <a href="https://github.com/Sonu-mj" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/jadhav-srinivas" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:sri2jadhav@gmail.com">Email</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="about">
+  <p class="secnum">01 &middot; About</p>
+  <h2>Builder first. Student always.</h2>
+  <p>I'm a third-year Data Science engineering student at Impact College of Engineering and Applied Sciences, Bangalore. Most of my skills come from shipping real projects, not just coursework: an Isolation Forest model flagging unusual sales patterns on live transaction data, a gradient-boosting demand forecaster evaluated on MAE, RMSE and MAPE, and a retrieval pipeline built from zero with my own chunker, embeddings and vector store.</p>
+  <p>I start from the problem, pick the simplest method that could work, and measure whether it did. Open to data science and machine learning internships in Bangalore - on-site, hybrid or remote.</p>
+</section>
+
+<section id="skills">
+  <p class="secnum">02 &middot; Skills</p>
+  <h2>The toolkit.</h2>
+  <p class="secsub">Tools I've actually shipped with - not a wishlist. Grouped by where they sit in the workflow.</p>
+  <div class="groups">
+    <div class="group">
+      <h3>Languages</h3>
+      <p>Python, SQL, JavaScript, TypeScript</p>
+    </div>
+    <div class="group">
+      <h3>Data &amp; ML</h3>
+      <p>Pandas, NumPy, scikit-learn, Statistics, EDA, Feature Engineering</p>
+    </div>
+    <div class="group">
+      <h3>GenAI</h3>
+      <p>RAG pipelines, LLMs, Prompt Engineering, Vector Search</p>
+    </div>
+    <div class="group">
+      <h3>BI &amp; Reporting</h3>
+      <p>Power BI, Excel, Dashboards, KPI Reporting</p>
+    </div>
+    <div class="group">
+      <h3>Engineering</h3>
+      <p>Git, GitHub, Supabase, PostgreSQL, Vercel</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <p class="secnum">03 &middot; Projects</p>
+  <h2>Work that runs somewhere.</h2>
+  <p class="secsub">Five projects, one shape: the problem, what I built, and what it does now.</p>
+
+  <article class="project">
+    <h3>RetailIQ - Multi-Outlet Retail Analytics Platform</h3>
+    <p class="prole">Problem: small retail outlets had billing software but no idea what their own sales data was saying.</p>
+    <p>Built the full platform and its ML layer: an Isolation Forest anomaly detector (240 estimators, contamination 0.08) that flags unusual sales patterns with explainable severity scoring, and a HistGradientBoostingRegressor demand forecaster evaluated on MAE, RMSE and MAPE, feeding automated staff planning. Live on Vercel with a Supabase backend, role-based access and audit logging.</p>
+    <p class="links"><a href="https://retailiq-jade.vercel.app" target="_blank" rel="noopener">Live demo</a> &middot; <a href="https://github.com/Sonu-mj/retailiq" target="_blank" rel="noopener">Repo</a></p>
+    <p class="tags">Python &middot; scikit-learn &middot; Pandas &middot; Supabase &middot; PostgreSQL</p>
+  </article>
+
+  <article class="project">
+    <h3>RAG from Scratch</h3>
+    <p class="prole">Problem: every RAG tutorial hides the retrieval inside a library call. I wanted to know what actually happens.</p>
+    <p>Wrote the whole pipeline by hand in Python: a sentence-aware chunker (500 chars, 75 overlap), TF-IDF embeddings, and a NumPy cosine-similarity vector store. Ships with a CLI and a self-test. Retrieved chunks ground every answer in source documents - no framework magic.</p>
+    <p class="links"><a href="https://github.com/Sonu-mj/rag-from-scratch" target="_blank" rel="noopener">Repo</a></p>
+    <p class="tags">Python &middot; NumPy &middot; NLP &middot; Information Retrieval</p>
+  </article>
+
+  <article class="project">
+    <h3>AirBrush - Draw in the Air, Create with AI</h3>
+    <p class="prole">Problem: drawing apps need a mouse or a tablet. Your hand is already a pointer.</p>
+    <p>A browser app that turns a webcam into a drawing tool: MediaPipe Hands tracks 21 hand landmarks (index finger draws, two fingers erase, palm pauses). Sketches go through sketch-guided AI image generation, with 10 art styles, voice input and an in-browser gallery.</p>
+    <p class="links"><a href="https://sonu-mj.github.io/airbrush/" target="_blank" rel="noopener">Live demo</a> &middot; <a href="https://github.com/Sonu-mj/airbrush" target="_blank" rel="noopener">Repo</a></p>
+    <p class="tags">JavaScript &middot; MediaPipe &middot; GenAI APIs</p>
+  </article>
+
+  <article class="project">
+    <h3>Distributed Consensus Lab</h3>
+    <p class="prole">Problem: distributed systems courses describe Raft. I wanted to watch it elect a leader.</p>
+    <p>A from-scratch Raft implementation in TypeScript: leader election, log replication, commit protocol, stale-term handling, manual fail and recover. Backed by 94 engine tests and a live visualization of node states, the event timeline and the replicated log.</p>
+    <p class="tags">TypeScript &middot; Algorithms &middot; Distributed Systems</p>
+  </article>
+
+  <article class="project">
+    <h3>Library Management System</h3>
+    <p class="prole">Problem: a class project that could have used a list. I used it to learn how databases index.</p>
+    <p>A Python library app with a custom-built AVL tree storage engine: books and students indexed in self-balancing trees giving O(log n) search, insert and delete, with rotations handled by hand. CLI and web UI on top.</p>
+    <p class="links"><a href="https://github.com/Sonu-mj/library-management-sys" target="_blank" rel="noopener">Repo</a></p>
+    <p class="tags">Python &middot; Data Structures &middot; Algorithms</p>
+  </article>
+</section>
+
+<section id="education">
+  <p class="secnum">04 &middot; Education</p>
+  <h2>The foundation underneath it.</h2>
+  <p><strong>B.E. Data Science</strong> - Impact College of Engineering and Applied Sciences, Bangalore<br>
+  <span class="dim">2024 - 2028</span></p>
+</section>
+
+<section id="certifications">
+  <p class="secnum">05 &middot; Certifications</p>
+  <h2>Credentials that matter.</h2>
+  <ul class="certs">
+    <li><strong>The Ultimate Job Ready Data Science Course</strong> - CodeWithHarry <span class="dim">(Oct 2026)</span></li>
+    <li><strong>Data Analytics Course</strong> - Tutedude <span class="dim">(Oct 2026)</span></li>
+    <li><strong>GenAI Powered Data Analytics Job Simulation</strong> - Tata Group via Forage <span class="dim">(Oct 2026)</span></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <p class="secnum">06 &middot; Get In Touch</p>
+  <h2>Let's talk.</h2>
+  <p>Hiring for a data science or ML intern seat? Building something where the data needs to be trustworthy and the model needs to actually run? Send a note - I reply to everything.</p>
+  <nav class="links">
+    <a href="mailto:sri2jadhav@gmail.com">sri2jadhav@gmail.com</a>
+    <a href="https://www.linkedin.com/in/jadhav-srinivas" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Sonu-mj" target="_blank" rel="noopener">GitHub</a>
+  </nav>
+  <p class="foot">Bangalore &middot; open to on-site, hybrid, remote</p>
+</section>
+
+</main>
+</body>
+</html>
