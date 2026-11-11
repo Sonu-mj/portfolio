@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Srinivas Jadhav - Data Science</title>
-<meta name="description" content="Srinivas Jadhav: data science student building ML that ships. RetailIQ live platform, from-scratch RAG pipeline. Open to internships in Bangalore.">
+<meta name="description" content="Srinivas Jadhav: data science student building things that ship. DairyChain dairy analytics, RetailIQ live platform, FactoryPulse machine health, from-scratch RAG pipeline. Open to internships in Bangalore.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,13 +16,19 @@
 
 <header class="hero">
   <h1>I build machine learning<br>that <em>actually runs</em> somewhere.</h1>
-  <p class="intro">Third-year Data Science student in Bangalore. My models aren't notebook screenshots: one flags fraud-like sales patterns on live retail transactions, another forecasts demand for real stores. I learn by shipping.</p>
+  <p class="intro">Third-year Data Science student in Bangalore. My work is not notebook screenshots: DairyChain turns 99,584 dairy records into answers a business can act on, RetailIQ flags fraud-like patterns on live retail transactions, and FactoryPulse predicts machine failure before it happens. I learn by shipping.</p>
   <div class="cta-row">
     <a class="btn" href="mailto:sri2jadhav@gmail.com">Get in touch</a>
     <a class="btn ghost" href="https://github.com/Sonu-mj" target="_blank" rel="noopener">GitHub</a>
     <a class="btn ghost" href="https://www.linkedin.com/in/jadhav-srinivas" target="_blank" rel="noopener">LinkedIn</a>
   </div>
   <p class="meta">Bangalore &middot; immediate joiner &middot; on-site / hybrid / remote</p>
+  <div class="stats">
+    <div class="stat"><b>99,584</b><span>records in DairyChain</span></div>
+    <div class="stat"><b>Rs 5.99 crore</b><span>rejected milk cost found</span></div>
+    <div class="stat"><b>4</b><span>Power BI dashboards</span></div>
+    <div class="stat"><b>15</b><span>business questions, answered with SQL</span></div>
+  </div>
 </header>
 
 <main>
@@ -32,11 +38,24 @@
 
   <article class="card">
     <div class="card-head">
+      <h3>DairyChain</h3>
+      <span class="live">new</span>
+    </div>
+    <p class="tagline">End-to-end dairy supply chain analytics</p>
+    <p>99,584 records across 10 CSV files, cleaned into PostgreSQL Bronze, Silver and Gold layers. 4 Power BI dashboards with 21 DAX measures answer 15 business questions with SQL. The headline finding: rejected milk cost Rs 5.99 crore out of Rs 48.19 crore purchased, and Low SNF alone cost Rs 3.44 crore.</p>
+    <p class="key">Key number: Rs 5.99 crore rejected milk cost</p>
+    <p class="stack">Python &middot; Pandas &middot; PostgreSQL &middot; SQL &middot; Power BI &middot; DAX</p>
+    <p class="card-links"><a href="https://github.com/Sonu-mj/dairychain" target="_blank" rel="noopener">Code &rarr;</a></p>
+  </article>
+
+  <article class="card">
+    <div class="card-head">
       <h3>RetailIQ</h3>
       <span class="live">live</span>
     </div>
     <p class="tagline">Multi-outlet POS with a machine-learning layer on real transaction data.</p>
     <p>Built an Isolation Forest anomaly detector (240 estimators) that flags unusual sales patterns with explainable severity scores, and a gradient-boosting demand forecaster evaluated on MAE, RMSE and MAPE that feeds automated staff planning. Full platform on Vercel + Supabase with role-based access and audit logging.</p>
+    <p class="key">Key number: 240 estimators, live on real transactions</p>
     <p class="stack">Python &middot; scikit-learn &middot; Pandas &middot; Supabase &middot; PostgreSQL</p>
     <p class="card-links"><a href="https://retailiq-jade.vercel.app" target="_blank" rel="noopener">Live demo &rarr;</a> <a href="https://github.com/Sonu-mj/retailiq" target="_blank" rel="noopener">Code &rarr;</a></p>
   </article>
@@ -45,6 +64,7 @@
     <h3>RAG from Scratch</h3>
     <p class="tagline">Retrieval-augmented generation with zero ML frameworks.</p>
     <p>Every tutorial hides retrieval inside a library call, so I wrote it all by hand: sentence-aware chunking, TF-IDF embeddings, a NumPy cosine-similarity vector store, and a CLI with self-test. Retrieved chunks ground every answer in source documents.</p>
+    <p class="key">Key number: 0 ML frameworks</p>
     <p class="stack">Python &middot; NumPy &middot; NLP &middot; Information Retrieval</p>
     <p class="card-links"><a href="https://github.com/Sonu-mj/rag-from-scratch" target="_blank" rel="noopener">Code &rarr;</a></p>
   </article>
@@ -53,6 +73,7 @@
     <h3>AirBrush</h3>
     <p class="tagline">Draw in the air, let AI finish the artwork.</p>
     <p>A browser app that turns a webcam into a drawing tool: MediaPipe tracks 21 hand landmarks, index finger draws, two fingers erase, palm pauses. Sketches go through sketch-guided AI image generation with 10 art styles, voice input and an in-browser gallery.</p>
+    <p class="key">Key number: 21 hand landmarks tracked</p>
     <p class="stack">JavaScript &middot; MediaPipe &middot; GenAI APIs</p>
     <p class="card-links"><a href="https://sonu-mj.github.io/airbrush/" target="_blank" rel="noopener">Live demo &rarr;</a> <a href="https://github.com/Sonu-mj/airbrush" target="_blank" rel="noopener">Code &rarr;</a></p>
   </article>
@@ -61,6 +82,7 @@
     <h3>Distributed Consensus Lab</h3>
     <p class="tagline">Raft consensus, implemented and visualized from scratch.</p>
     <p>Leader election, log replication, commit protocol, stale-term handling, manual fail and recover - all in TypeScript, backed by 94 engine tests, with a live view of node states, the event timeline and the replicated log.</p>
+    <p class="key">Key number: 94 engine tests</p>
     <p class="stack">TypeScript &middot; Algorithms &middot; Distributed Systems</p>
   </article>
 
@@ -68,6 +90,7 @@
     <h3>Library Management System</h3>
     <p class="tagline">A class project used to learn how databases index.</p>
     <p>Python library app with a hand-built AVL tree storage engine: books and students indexed in self-balancing trees for O(log n) search, insert and delete, rotations and all. CLI and web UI on top.</p>
+    <p class="key">Key number: O(log n) search, insert and delete</p>
     <p class="stack">Python &middot; Data Structures &middot; Algorithms</p>
     <p class="card-links"><a href="https://github.com/Sonu-mj/library-management-sys" target="_blank" rel="noopener">Code &rarr;</a></p>
   </article>
@@ -79,7 +102,7 @@
     <div><h4>Languages</h4><p>Python, SQL, JavaScript, TypeScript</p></div>
     <div><h4>Data &amp; ML</h4><p>Pandas, NumPy, scikit-learn, Statistics, EDA</p></div>
     <div><h4>GenAI</h4><p>RAG pipelines, LLMs, Vector Search</p></div>
-    <div><h4>BI</h4><p>Power BI, Excel, Dashboards, KPI Reporting</p></div>
+    <div><h4>BI</h4><p>Power BI, DAX, Excel, Dashboards, KPI Reporting</p></div>
     <div><h4>Engineering</h4><p>Git, GitHub, Supabase, PostgreSQL, Vercel</p></div>
   </div>
 </section>
@@ -107,6 +130,7 @@
 
 <footer>
   <p>Srinivas Jadhav &middot; Bangalore &middot; 2026</p>
+  <p><a href="https://github.com/Sonu-mj" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/jadhav-srinivas" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="mailto:sri2jadhav@gmail.com">sri2jadhav@gmail.com</a></p>
 </footer>
 
 </body>
